@@ -1,0 +1,15 @@
+# kubernetes resource's API Version
+apiVersion: v1
+
+# kubernetes resource name
+kind: Pod
+
+# metadata: name, namespace, labels, annotations 등을 포함
+metadata:
+  name: counter
+spec:
+  containers:
+    - name: count		# 컨테이너 이름
+      image: busybox 		# 컨테이너 이미지
+      # entrypoint의 arguments로 입력하고 싶은 부분
+      args: [/bin/sh, -c, 'i=0; while true; do echo "$i: $(date)"; i=$((i+1)); sleep 1; done']
