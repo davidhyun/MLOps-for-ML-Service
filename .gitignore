@@ -1,0 +1,5 @@
+**/__pycache__/**
+mlflow-tutorial/mlartifacts/*
+mlflow-tutorial/mlruns/*
+mlflow-tutorial/*.png
+
